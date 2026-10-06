@@ -127,8 +127,7 @@ export default function Home() {
           <div className="hidden items-center gap-7 text-sm font-semibold md:flex">
             <a href="#home">Home</a>
             <a href="#courses">Courses</a>
-            <a href="#about">About</a>
-            <a href="#faqs">FAQs</a>
+            <a href="/about">About</a>
           </div>
           <div className="hidden md:block">
             <CTA>Explore Courses</CTA>
@@ -147,11 +146,8 @@ export default function Home() {
               <a onClick={() => setOpen(false)} href="#courses">
                 Courses
               </a>
-              <a onClick={() => setOpen(false)} href="#about">
+              <a onClick={() => setOpen(false)} href="/about">
                 About
-              </a>
-              <a onClick={() => setOpen(false)} href="#faqs">
-                FAQs
               </a>
             </div>
           </div>
@@ -442,7 +438,7 @@ export default function Home() {
               responsible use of AI rather than blindly copying code.
             </p>
             <div className="mt-7">
-              <CTA href="#about">About Me</CTA>
+              <CTA href="/about">About Me</CTA>
             </div>
           </div>
         </div>
@@ -477,16 +473,16 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-2 gap-x-12 gap-y-3 text-sm font-semibold text-slate-600">
             <a href="#courses">Courses</a>
-            <a href="#about">About</a>
-            <a href="#faqs">FAQs</a>
+            <a href="/about">About</a>
+
             <a href="mailto:adbata26@gmail.com">Contact</a>
             <a href="/privacy-policy">Privacy Policy</a>
-            <a href="#terms">Terms</a>
           </div>
           <div className="flex gap-4 text-sm font-semibold">
-            <a href="#facebook">Facebook</a>
-            <a href="#youtube">YouTube</a>
-            <a href="#discord">Discord</a>
+            <a href="https://www.facebook.com/thinklikeaprogrammer1">
+              Facebook
+            </a>
+            <a href="#">adbata26@gmail.com</a>
           </div>
         </div>
         <p className="border-t border-[#dce8ff] py-5 text-center text-xs text-slate-500">
