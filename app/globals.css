@@ -1,7 +1,7 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "../vendor/shadcn-tailwind-4.13.0.css";
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
 
 @utility scrollbar-thin {
   scrollbar-width: thin;
@@ -139,6 +139,8 @@ body {
 
 ::selection { background: #135dff; color: white; }
 .font-display { font-family: Manrope, Inter, sans-serif; }
+.course-page { font-family: "Plus Jakarta Sans", Inter, Arial, sans-serif; }
+.course-page .font-display { font-family: "Plus Jakarta Sans", Inter, Arial, sans-serif; }
 .grid-lines { background-image: linear-gradient(#dce8ff 1px, transparent 1px), linear-gradient(90deg, #dce8ff 1px, transparent 1px); background-size: 30px 30px; }
 .hero-orbit { background: repeating-radial-gradient(ellipse at 72% 60%, transparent 0 23px, rgba(255,255,255,.22) 24px 25px, transparent 26px 46px); }
 @media (prefers-reduced-motion: no-preference) { .lift { transition: transform .2s ease, box-shadow .2s ease; } .lift:hover { transform: translateY(-5px); box-shadow: 0 20px 35px rgba(20,93,255,.12); } }
