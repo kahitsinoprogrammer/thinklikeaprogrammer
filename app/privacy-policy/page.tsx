@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | Think Like A Programmer",
@@ -157,12 +156,12 @@ export default function PrivacyPolicyPage() {
     <main className="min-h-screen bg-[#f0f5ff] text-[#101a35]">
       <header className="border-b border-[#dce8ff] bg-white">
         <div className="mx-auto flex max-w-4xl items-center justify-between px-5 py-5 lg:px-8">
-          <Link href="/" className="font-display font-extrabold tracking-tight">
+          <a href="/" className="font-display font-extrabold tracking-tight">
             Think Like A Programmer
-          </Link>
-          <Link href="/" className="text-sm font-bold text-[#155dfc]">
+          </a>
+          <a href="/" className="text-sm font-bold text-[#155dfc]">
             Back to home
-          </Link>
+          </a>
         </div>
       </header>
 

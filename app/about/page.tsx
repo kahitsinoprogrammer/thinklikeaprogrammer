@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { ArrowUpRight, Code2, GraduationCap, Heart, Laptop } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -19,7 +18,7 @@ export default function AboutPage() {
     <main className="min-h-screen overflow-hidden bg-white text-[#101a35]">
       <header className="border-b border-[#dce8ff] bg-white/95 backdrop-blur">
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
-          <Link
+          <a
             href="/"
             className="font-display flex items-center gap-2 font-extrabold tracking-tight"
           >
@@ -27,10 +26,10 @@ export default function AboutPage() {
               T
             </span>
             <span>Think Like A Programmer</span>
-          </Link>
-          <Link href="/" className="text-sm font-bold text-[#155dfc]">
+          </a>
+          <a href="/" className="text-sm font-bold text-[#155dfc]">
             Back to home
-          </Link>
+          </a>
         </nav>
       </header>
 
