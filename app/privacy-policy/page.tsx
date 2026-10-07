@@ -131,7 +131,17 @@ const sections = [
       "Some information may need to be retained where required by law or for legitimate administrative or financial purposes.",
   },
   {
-    title: "11. Cookies and Website Analytics",
+    title: "11. Advertising and Meta Pixel",
+    paragraphs: [
+      "We use advertising and analytics technologies, including the Meta Pixel, to understand how visitors interact with our website, measure the effectiveness of our advertising, and support remarketing to people who may be interested in our courses.",
+      "These technologies may process information such as browser, device, and website-activity information, as well as identifiers that you provide to us where advanced matching is enabled, such as an email address or phone number.",
+      "Advanced matching does not provide Meta with your raw passwords, banking credentials, PINs, one-time passwords, or other confidential financial login information.",
+    ],
+    after:
+      "Meta may process information collected through its tools in accordance with its own privacy policy. You can manage certain advertising preferences through Meta's ad settings.",
+  },
+  {
+    title: "12. Cookies and Website Analytics",
     paragraphs: ["Our website may use cookies or similar technologies to:"],
     items: [
       "Maintain website functionality",
@@ -140,10 +150,10 @@ const sections = [
       "Measure advertising performance",
     ],
     after:
-      "If analytics or advertising tools are added in the future, this Privacy Policy may be updated to reflect those services.",
+      "You may be able to control cookies through your browser settings. Disabling some cookies may affect how the website functions.",
   },
   {
-    title: "12. Changes to This Privacy Policy",
+    title: "13. Changes to This Privacy Policy",
     paragraphs: [
       "We may update this Privacy Policy from time to time.",
       "The latest version will be posted on this website with its updated effective date.",
@@ -200,7 +210,7 @@ export default function PrivacyPolicyPage() {
           ))}
 
           <section className="rounded-2xl bg-[#101a35] p-6 text-white sm:p-8">
-            <h2 className="font-display text-2xl font-extrabold">13. Contact</h2>
+            <h2 className="font-display text-2xl font-extrabold">14. Contact</h2>
             <p className="mt-4 leading-7 text-slate-300">
               For privacy-related concerns, contact Think Like A Programmer at{" "}
               <a
