@@ -4,16 +4,19 @@ import {
   ArrowRight,
   BadgeCheck,
   BrainCircuit,
+  BriefcaseBusiness,
   CalendarDays,
   Check,
   CircleHelp,
   Code2,
   Database,
+  GraduationCap,
   Laptop,
   Layers3,
   Menu,
   MessageCircle,
   Rocket,
+  Sparkles,
   Users,
 } from "lucide-react";
 import Script from "next/script";
@@ -215,6 +218,70 @@ export default function November2026Course() {
               width={500}
               className="border-4 border-white rounded-xl"
             />
+          </div>
+        </div>
+      </section>
+      <section className="relative overflow-hidden bg-[#f0f5ff] py-20 sm:py-24">
+        <div className="absolute -left-20 top-12 h-64 w-64 rounded-full bg-[#ffe063]/45 blur-3xl" />
+        <div className="relative mx-auto max-w-7xl px-5 lg:px-8">
+          <div className="max-w-3xl">
+            <p className="text-sm font-bold uppercase tracking-[.18em] text-[#155dfc]">
+              Baka ikaw ito
+            </p>
+            <h2 className="font-display mt-3 text-4xl font-extrabold tracking-[-.05em] text-[#101a35] sm:text-5xl">
+              Para sa&apos;yo itong course na &apos;to kung…
+            </h2>
+            <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-600">
+              Hindi mo kailangang maging IT graduate para magsimulang gumawa ng
+              useful, real-world applications.
+            </p>
+          </div>
+          <div className="mt-12 grid gap-5 md:grid-cols-2">
+            {[
+              [
+                BriefcaseBusiness,
+                "May app idea ka para sa business mo",
+                "May problem kang gustong ayusin sa business pero hindi mo alam kung paano sisimulan ang paggawa ng app.",
+              ],
+              [
+                GraduationCap,
+                "May school o capstone project ka",
+                "Gusto mong gumawa ng project na hindi lang matapos, kundi may totoong gamit at maipagmamalaki mo.",
+              ],
+              [
+                Users,
+                "Galing ka sa non-IT background",
+                "Gusto mong magkaroon ng practical na introduction sa development—step by step, kahit beginner ka.",
+              ],
+              [
+                Sparkles,
+                "Gusto mong gamitin ang AI nang may understanding",
+                "Gusto mong makapag-code gamit ang AI nang hindi basta kumokopya ng generated code na hindi mo naiintindihan.",
+              ],
+            ].map(([Icon, title, description], index) => {
+              const I = Icon as typeof BriefcaseBusiness;
+              return (
+                <article
+                  key={String(title)}
+                  className="lift group relative overflow-hidden rounded-3xl border border-[#b7d1ff] bg-white p-7 shadow-sm sm:p-8"
+                >
+                  <span className="font-display absolute right-6 top-5 text-6xl font-extrabold leading-none text-[#dce8ff]">
+                    0{index + 1}
+                  </span>
+                  <div className="relative">
+                    <span className="grid h-12 w-12 place-items-center rounded-2xl bg-[#155dfc] text-white">
+                      <I size={23} strokeWidth={2.4} />
+                    </span>
+                    <h3 className="font-display mt-6 max-w-sm text-xl font-extrabold tracking-[-.03em] text-[#101a35]">
+                      {String(title)}
+                    </h3>
+                    <p className="mt-3 max-w-md text-base leading-7 text-slate-600">
+                      {String(description)}
+                    </p>
+                  </div>
+                </article>
+              );
+            })}
           </div>
         </div>
       </section>
